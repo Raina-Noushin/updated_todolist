@@ -62,7 +62,7 @@ export class FilelistComponent implements OnInit {
   // title= 'Angular TO DO List';
   lists = [{
     title:'new 1',
-    description:'Angular is a platform and framework for building single-page client applications using HTML and TypeScript. Angular is written in TypeScript. It implements core and optional functionality as a set of TypeScript libraries that you import into your apps.',
+    description:'Angular is a platform and framework for building single-page client applications using HTML and TypeScript. ',
     date:'2021-04-18',
     status:'yet to start'
   },

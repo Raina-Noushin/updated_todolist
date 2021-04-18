@@ -1,5 +1,5 @@
-<div class="row">
-  <div class="col-md-6">
+<div class="row" style="float: right;">
+  <div class="col-md-6 " >
   <form [formGroup]="todoList" (ngSubmit)="onSubmit()">
     <div class="form-group">
       <label for="title"><b>Task Title :</b></label>
@@ -18,14 +18,15 @@
     <input type="status" id="status" name="status" formControlName="status">
     </div>
     <div class="form-group">
-    <button class="btn btn-danger">Add Task</button>
+    <button class="btn btn-dark" style=" float:right">Add Task</button>
     </div>
 
   </form>
   </div>
-  <div class="col-md-6">
-    <p style="text-align: center;"><b>List of All Taks</b></p>
-  <div class="container rounded border border-dark mb-5 pb-2" *ngFor="let list of lists">
+
+  <div class="col-md-5">
+    <p style="text-align: center;"><b><u> All Taks</u></b></p>
+  <div class="container rounded border border-darken-1 mb-5 pb-2" *ngFor="let list of lists">
     <h4>{{list.title}}</h4>
     <p>{{list.description}}</p>
     <div class="row">
